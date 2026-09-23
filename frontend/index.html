@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherNow</title>
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>WeatherNow</h1>
+            <p>Live weather information</p>
+        </header>
+
+        <section class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </section>
+
+        <p id="errorMessage"></p>
+
+        <section id="weatherContainer" class="hidden">
+
+            <div class="location">
+                <h2 id="locationName"></h2>
+                <p id="locationCountry"></p>
+            </div>
+
+            <div class="current-weather">
+
+                <div class="temperature-section">
+
+                    <img
+                        id="weatherIcon"
+                        src=""
+                        alt="Weather icon"
+                    >
+
+                    <div>
+                        <h2>
+                            <span id="temperature"></span>°C
+                        </h2>
+
+                        <p id="condition"></p>
+                    </div>
+
+                </div>
+
+                <p>
+                    Feels like:
+                    <strong>
+                        <span id="feelsLike"></span>°C
+                    </strong>
+                </p>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>Humidity</span>
+                    <strong id="humidity"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Wind</span>
+                    <strong id="wind"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Pressure</span>
+                    <strong id="pressure"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Visibility</span>
+                    <strong id="visibility"></strong>
+                </div>
+
+            </div>
+
+            <section class="forecast">
+
+                <h2>Forecast</h2>
+
+                <div id="forecastContainer"></div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+
+</body>
+
+</html>
