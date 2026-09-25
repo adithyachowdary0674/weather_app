@@ -1,3 +1,7 @@
+import { inject } from "@vercel/analytics";
+
+inject();
+
 const cityInput =
     document.getElementById("cityInput");
 
