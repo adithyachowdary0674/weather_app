@@ -184,3 +184,57 @@ header p {
     }
 
 }
+
+/* =========================
+   ATMOSPOINT BRANDING
+   ========================= */
+
+.brand-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.brand-logo {
+    width: 280px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .brand-logo {
+        width: 220px;
+    }
+}
+/* =========================
+   ATMOSPOINT BRANDING
+   ========================= */
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.brand-logo {
+    width: 280px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.brand-header p {
+    margin-top: 8px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .brand-logo {
+        width: 220px;
+    }
+}
